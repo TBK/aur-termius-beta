@@ -2,24 +2,24 @@
 # Contributor: TBK <aur at jjtc dot eu>
 
 pkgname=termius-beta
-pkgver=9.34.5
+pkgver=9.35.3
 pkgrel=1
 pkgdesc="Desktop SSH Client"
 url="https://www.termius.com/"
 arch=('x86_64')
 license=('custom')
-depends=('at-spi2-core' 'dbus' 'e2fsprogs' 'expat' 'gtk3' 'keyutils' 'libbsd' 'libnotify' 'libsecret' 'libxss' 'libxtst' 'nss' 'util-linux-libs' 'xdg-utils')
+depends=('alsa-lib' 'at-spi2-core' 'dbus' 'e2fsprogs' 'expat' 'gtk3' 'keyutils' 'libbsd' 'libnotify' 'libsecret' 'libxss' 'libxtst' 'nss' 'util-linux-libs' 'xdg-utils')
 optdepends=('libappindicator-gtk3')
 makedepends=('squashfs-tools')
 # Get latest version + link from https://snapcraft.io/termius-beta|| snap info termius-beta || run the following
 # curl -H 'X-Ubuntu-Series: 16' https://api.snapcraft.io/api/v1/snaps/details/termius-beta | jq '.download_url' -r
 # curl -H 'X-Ubuntu-Series: 16' https://api.snapcraft.io/api/v1/snaps/details/termius-beta | jq '.version' -r
 source=(
-    "$pkgname-$pkgver.snap::https://api.snapcraft.io/api/v1/snaps/download/yyZzRdoyiRz3EM7iuvjhaIjDfnlFJcZs_388.snap"
+    "$pkgname-$pkgver.snap::https://api.snapcraft.io/api/v1/snaps/download/yyZzRdoyiRz3EM7iuvjhaIjDfnlFJcZs_392.snap"
     "termius-beta.desktop"
     "tos.html"
 )
-sha512sums=('a7da7cbef0608f3ef10deb1eb80df35e1ee958fc9f22f039604d77ac051e1399c2456c9798669c949879e82f540239ee62b1e85c8c2d89c0c4390ae251a37d0f'
+sha512sums=('052a0cfc02ed78dbeaa9b01effef0ec2405590cb99ad656fdf782a7641d173e0ac2a30ee8165728a038061e27adf403ca3cac6cbf6e543b08e9b68f8895a3e89'
             '8bf93360614226cf477e5322d87e5fefe781d97e30390777ccb89282219c90714e98868381ab69b001c67a606e068f51a177b6f48bbbdb0c0f4a4f27bf0f0dd4'
             '6ac7c082d1adba92dd911f46f9926f702be0f92a9843e6252364477d81364569eeeee9b37170a6d9000fde644588734cb6a11d165fc0aff3dbfbcd6ad353ca96')
 
